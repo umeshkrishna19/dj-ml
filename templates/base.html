@@ -1,6 +1,11 @@
-
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/side-menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/top-nav.css' %}">
+</head>
 <body>
     {% include 'side-menu.html' %}
+    {% include 'topnav.html' %}
 
     {% block content %}
     {% endblock %}

@@ -1,0 +1,12 @@
+{% block content %}
+{% include 'base.html' %}
+
+New Prediction
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="file" name="myfile">
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
